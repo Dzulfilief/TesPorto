@@ -1,0 +1,47 @@
+{
+  "entities": {
+    "projects": {
+      "title": "Projects",
+      "description": "Portfolio projects displayed on the main page",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "description": "The title of the project" },
+        "description": { "type": "string", "description": "A detailed description of the project" },
+        "category": { "type": "string", "description": "The category of the project (e.g., Web, Mobile, Design)" },
+        "imageUrl": { "type": "string", "description": "URL to the project image or illustration" },
+        "demoUrl": { "type": "string", "description": "Optional live demo URL" },
+        "githubUrl": { "type": "string", "description": "Optional source code URL" },
+        "tags": { "type": "array", "description": "List of technologies or tags used" },
+        "createdAt": { "type": "number", "description": "Unix timestamp of creation" }
+      },
+      "required": ["title", "description", "category", "createdAt"]
+    },
+    "profile": {
+      "title": "Profile",
+      "description": "User profile information and brief biography",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "The name of the portfolio owner" },
+        "title": { "type": "string", "description": "Professional title (e.g., Futuristic UI/UX Developer)" },
+        "aboutMe": { "type": "string", "description": "A short bio shown in the intro section" },
+        "avatarUrl": { "type": "string", "description": "URL to the profile picture" },
+        "skills": { "type": "array", "description": "List of core skills" },
+        "email": { "type": "string", "description": "Contact email address" },
+        "github": { "type": "string", "description": "GitHub profile URL" },
+        "linkedin": { "type": "string", "description": "LinkedIn profile URL" },
+        "twitter": { "type": "string", "description": "Twitter/X profile URL" }
+      },
+      "required": ["name", "title", "aboutMe"]
+    }
+  },
+  "firestore": {
+    "/projects/{projectId}": {
+      "schema": "projects",
+      "description": "Collection of portfolio projects"
+    },
+    "/profile/settings": {
+      "schema": "profile",
+      "description": "Singleton document containing the owner profile data"
+    }
+  }
+}

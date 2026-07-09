@@ -1,0 +1,6 @@
+{
+  "name": "Futuristic Portfolio CMS",
+  "description": "An interactive portfolio with a sleek futuristic design, featuring scroll transitions, dark mode, responsive mobile layout, and a real-time CMS powered by Firebase to manage projects and profile data.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
