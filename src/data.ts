@@ -4,7 +4,7 @@ export const DEFAULT_PROFILE: Profile = {
   name: "Alief",
   title: "Futuristic Full-Stack Engineer & Interaction Architect",
   aboutMe: "I craft immersive, ultra-high-performance digital spaces and next-generation web platforms. Combining high-end design sensibilities with robust cloud architectures, I bridge the gap between creative storytelling and advanced computer systems.",
-  avatarUrl: "/assets/foto.jpg",
+  avatarUrl: "/foto.jpg",
   skills: [
     "TypeScript / React / Next.js",
     "Creative Development (WebGL, Three.js, Motion)",
