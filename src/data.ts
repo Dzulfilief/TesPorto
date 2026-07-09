@@ -1,10 +1,10 @@
 import { Project, Profile, Experience } from "./types";
 
 export const DEFAULT_PROFILE: Profile = {
-  name: "Kenji Takahashi",
+  name: "Alief",
   title: "Futuristic Full-Stack Engineer & Interaction Architect",
   aboutMe: "I craft immersive, ultra-high-performance digital spaces and next-generation web platforms. Combining high-end design sensibilities with robust cloud architectures, I bridge the gap between creative storytelling and advanced computer systems.",
-  avatarUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop",
+  avatarUrl: "/assets/foto.jpg",
   skills: [
     "TypeScript / React / Next.js",
     "Creative Development (WebGL, Three.js, Motion)",
